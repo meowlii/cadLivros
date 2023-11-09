@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=devide-with, initial-scale=1.0">
+    <title>Cadastro e Pesquisa de Jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <p>╭───────╯•╰───────╮</p>
+    <p>───────────────────────────────────────────────────</p>
+    <h1>Bem-vindo ao</h1>
+    <h1><u>Gerenciamento</u></h1>
+    <h1>de Livros!</h1>
+    <div id="cadastro">
+    <p>───────────────────────────────────────────────────</p>
+    <p>
+        ╰───────╮•╭───────╯</p>
+
+        <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+        <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
+        <h2><u>Informações</u></h2>
+        <form id="cadastroForm">
+            <label for="descricao">Descrição:</label>
+            <input type="text" placeholder="Informe a descrição" id="descricao" name="descricao" required><dr>
+
+                <p><label for="isbn">ISBN do Livro:</label>
+                <input type="text" placeholder="Informe o ISBN" id="isbn" name="isbn" required><br>
+
+                <button type="submit">Cadastrar</button>
+                <button type="button" onclick="atualizarLivro()">Atualizar</button>
+				<button type="button" onclick="excluirLivro()">Excluir</button>
+            </form>
+        </div>
+
+        <p>⊰ ⊱</p>
+
+        <div id="pesquisa">
+            <h2><u>Pesquisa de Livro</u></h2>
+            <form id="pesquisaForm">
+                <label for="searchId">ID do Livro:</label>
+                <input type="text" placeholder="Informe o ID" id="searchId" name="searchId"><br>
+
+                <button type="button" onclick="pesquisarLivro()">Pesquisar</button>
+            </form>
+        <div id="resultadoPesquisa"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
